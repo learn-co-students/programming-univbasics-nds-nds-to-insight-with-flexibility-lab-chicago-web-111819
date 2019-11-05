@@ -50,15 +50,15 @@ title_index = 0
  
 while title_index <  movies_collection.length do 
     movie_index = 0
-    while movie_index < movies_collection[title_index].length do
-          data = movies_collection[title_index][movie_index].length
-          data_index = 0
-        while data_index < data do
-              array_movies_names < movies_collection[title_index][movie_index][data_index]
-              data_index += 1
-            end
-            movie_index += 1
-        end
+   # while movie_index < movies_collection[title_index].length do
+          data = movies_collection[title_index]
+          #data_index = 0
+        #while data_index < data do
+              array_movies_names < movies_collection(name, movie_data)
+              #data_index += 1
+            #end
+            #movie_index += 1
+        #end
         title_index += 1
       end
     data
