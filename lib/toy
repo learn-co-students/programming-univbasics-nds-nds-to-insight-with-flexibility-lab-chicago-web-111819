@@ -49,8 +49,18 @@ director_name
 
 ]
 
+pp collection 
 
-array_movies_names =
+[{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
+ {:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
+ {:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
+
+
+
+
+
+
+pp array_movies_names =
 
 [{:title=>"TestA",
   :worldwide_gross=>nil,
@@ -62,3 +72,19 @@ array_movies_names =
   :release_year=>nil,
   :studio=>nil,
   :director_name=>"Byron Poodle"}]
+
+
+=> [{:title=>"TestA",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"},
+ {:title=>"TestB",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"}]
+
+
+
+
