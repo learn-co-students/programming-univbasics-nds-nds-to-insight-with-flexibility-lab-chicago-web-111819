@@ -49,19 +49,19 @@ array_movies_names = []
 title_index = 0
  
 while title_index <  movies_collection.length do 
-    movie_index = 0
+    #movie_index = 0
    # while movie_index < movies_collection[title_index].length do
           data = movies_collection[title_index]
           #data_index = 0
         #while data_index < data do
-              array_movies_names < movies_collection(name, movie_data)
+              array_movies_names << movie_with_director_name(name,data)
               #data_index += 1
             #end
             #movie_index += 1
         #end
         title_index += 1
       end
-    data
+    pp array_movies_names
  end
   
   #   # GOAL: For each Hash in an Array (movies_collection), provide a collection

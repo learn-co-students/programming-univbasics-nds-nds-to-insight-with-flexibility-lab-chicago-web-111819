@@ -48,3 +48,17 @@ director_name
 ]
 
 ]
+
+
+array_movies_names =
+
+[{:title=>"TestA",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"},
+ {:title=>"TestB",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"}]
