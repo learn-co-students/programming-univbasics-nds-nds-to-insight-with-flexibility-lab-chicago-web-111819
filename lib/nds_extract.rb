@@ -35,7 +35,7 @@ end
 
 def movies_with_director_key(name, movies_collection)
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
-  # of movies and a directors name to the movie_with_director_name method
+  # of movies and a director's name to the movie_with_director_name method
   # and accumulate the returned Array of movies into a new Array that's
   # returned by this method.
   #
@@ -48,8 +48,16 @@ def movies_with_director_key(name, movies_collection)
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
+  
+  i = 0
+  movies = []
+  while movies_collection[i]
+    movies << movie_with_director_name(name, movies_collection[i])
+    i += 1
+  end
+  puts movies
+  return movies
 end
-
 
 def gross_per_studio(collection)
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
@@ -63,6 +71,18 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
+
+  studios = {}
+    j = 0
+      while collection[j]
+        if !studios[collection[j][:studio]]
+          studios[collection[j][:studio]] = collection[j][:worldwide_gross]
+        else
+          studios[collection[j][:studio]] += collection[j][:worldwide_gross]
+        end
+        j += 1
+      end
+  return studios
 end
 
 def movies_with_directors_set(source)
@@ -76,6 +96,16 @@ def movies_with_directors_set(source)
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
   # to have a :director_name key added to it.
+  
+  dir_movies = []
+    j = 0
+    while j < source.length do
+      name = source[j][:name]
+      movies = source[j][:movies]
+      dir_movies << movies_with_director_key(name, movies)
+      j += 1
+    end
+  dir_movies
 end
 
 # ----------------    End of Your Code Region --------------------
