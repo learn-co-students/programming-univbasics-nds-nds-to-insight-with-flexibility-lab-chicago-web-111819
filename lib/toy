@@ -86,5 +86,54 @@ pp array_movies_names =
   :director_name=>"Byron Poodle"}]
 
 
+ [{:name=>"Byron Poodle",
 
+   :movies=>
+        [{:title=>"At the park"}, 
+        {:title=>"On the couch"}]},
 
+  {:name=>"Nancy Drew", 
+   :movies=>
+        [{:title=>"Biting"}]}
+  ]
+
+source
+=> [
+  {:name=>"Byron Poodle",
+
+:movies=>[
+  
+  {:title=>"At the park"}, 
+  {:title=>"On the couch"}]},
+
+  {:name=>"Nancy Drew", 
+ 
+ :movies=>[
+   {:title=>"Biting"}]}]
+
+def gross_per_studio(collection)
+#   # GOAL: Transform NDS'
+#   #
+#   # INPUT:
+#   # * collection: Array of Hashes where each Hash where each Hash represents a movie
+#   #
+#   # RETURN:
+#   #
+#   # * Hash whose keys are the studio names and whose values are the sum
+#   #   total of all the worldwide_gross numbers for every movie in the input Hash
+#   result = {}
+#   i = 0
+
+#   while i < collection.length do
+#     movie = collection[i]
+
+#     if !result[movie[:studio]]
+#       result[movie[:studio]] = movie[:worldwide_gross]
+#     else
+#       result[movie[:studio]] += movie[:worldwide_gross]
+#     end
+#     i += 1
+#   end
+
+#   result
+# end
