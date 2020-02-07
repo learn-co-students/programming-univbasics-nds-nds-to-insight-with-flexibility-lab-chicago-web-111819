@@ -1,0 +1,139 @@
+name
+=> "Byron Poodle"
+
+movies_collection
+=> [{:title=>"TestA"}, {:title=>"TestB"}]
+
+movie_data
+=> {:worldwide_gross=>2,
+    :release_year=>2014,
+    :studio=>"Karbit Poodles",
+    :title=>"The Fire Hydrant of Doom"}
+
+
+ aoa
+=> [[1, 2], [3, 4, 5], [6]]
+
+
+result
+=> [1, 2, 3, 4, 5, 6]
+
+director_name
+=> "Byron Poodle"
+
+ pp vm = [
+     [
+     [{:name=>"Vanilla Cookies", :price=>3}, 
+     {:name=>"Pistachio Cookies",:price=>3}, 
+     {:name=>"Chocolate Cookies", :price=>3}, 
+     {:name=>"Chocolate Chip Cookies", :price=>3}], 
+     
+     [{:name=>"Tooth-Melters", :price=>12},
+      {:name=>"Tooth-Destroyers", :price=>12}, 
+      {:name=>"Enamel Eaters",:price=>12}, 
+      {:name=>"Dentist's Nighmare", :price=>20}], 
+      
+      [{:name=>"Gummy Sour Apple", :price=>3}, 
+      {:name=>"Gummy Apple", :price=>5}, 
+      {:name=>"Gummy Moldy Apple", :price=>1}]], 
+      
+      [[{:name=>"Grape Drink", :price=>1}, 
+      {:name=>"Orange Drink", :price=>1}, 
+      {:name=>"Pineapple Drink", :price=>1}], 
+      
+      [{:name=>"Mints",:price=>13}, 
+      {:name=>"Curiously Toxic Mints",:price=>1000}, 
+      {:name=>"US Mints", :price=>99}
+      ]
+]
+
+]
+
+pp collection 
+
+[{:title=>"Movie A", :studio=>"Alpha Films", :worldwide_gross=>10},
+ {:title=>"Movie B", :studio=>"Alpha Films", :worldwide_gross=>30},
+ {:title=>"Movie C", :studio=>"Omega Films", :worldwide_gross=>30}]
+
+
+
+
+
+
+pp array_movies_names =
+
+[{:title=>"TestA",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"},
+ {:title=>"TestB",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"}]
+
+
+=> [{:title=>"TestA",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"},
+ {:title=>"TestB",
+  :worldwide_gross=>nil,
+  :release_year=>nil,
+  :studio=>nil,
+  :director_name=>"Byron Poodle"}]
+
+
+ [{:name=>"Byron Poodle",
+
+   :movies=>
+        [{:title=>"At the park"}, 
+        {:title=>"On the couch"}]},
+
+  {:name=>"Nancy Drew", 
+   :movies=>
+        [{:title=>"Biting"}]}
+  ]
+
+source
+=> [
+  {:name=>"Byron Poodle",
+
+:movies=>[
+  
+  {:title=>"At the park"}, 
+  {:title=>"On the couch"}]},
+
+  {:name=>"Nancy Drew", 
+ 
+ :movies=>[
+   {:title=>"Biting"}]}]
+
+def gross_per_studio(collection)
+#   # GOAL: Transform NDS'
+#   #
+#   # INPUT:
+#   # * collection: Array of Hashes where each Hash where each Hash represents a movie
+#   #
+#   # RETURN:
+#   #
+#   # * Hash whose keys are the studio names and whose values are the sum
+#   #   total of all the worldwide_gross numbers for every movie in the input Hash
+#   result = {}
+#   i = 0
+
+#   while i < collection.length do
+#     movie = collection[i]
+
+#     if !result[movie[:studio]]
+#       result[movie[:studio]] = movie[:worldwide_gross]
+#     else
+#       result[movie[:studio]] += movie[:worldwide_gross]
+#     end
+#     i += 1
+#   end
+
+#   result
+# end
